@@ -58,21 +58,22 @@ export const magnetProject: MagnetProject = {
   amountPaid: 10,
   outstanding: 70,
   balanceDueOn: '10/10/2026',
+  // Showroom contact details are redacted: the mockup is shared outside
+  // Primer, so no real branch address or phone number ships with it.
   showroom: {
-    name: 'Kitchen Showrooms Wimbledon',
-    email: 'wimbledonsouth.branch@magnet.co.uk',
-    phone: '+442085439695',
+    name: '####',
+    email: '####',
+    phone: '####',
   },
 };
 
 /**
- * Pre-filled billing details. The persona matches the screenshot Magnet
- * shared; the e-mail address is a placeholder on purpose, so no real customer
- * address ends up in this repository.
+ * Pre-filled billing details. A demo persona on purpose, so no real customer
+ * name or address ends up in this repository.
  */
 export const customer = {
-  name: 'Kerry Colt',
-  email: 'kerry.colt@example.com',
+  name: 'Chris Smol',
+  email: 'chris.smol@example.com',
   country: 'United Kingdom',
 };
 

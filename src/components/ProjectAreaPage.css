@@ -6,7 +6,7 @@
 .magnet-project {
   flex: 1;
   display: grid;
-  grid-template-columns: 104px minmax(0, 1fr) 350px;
+  grid-template-columns: 104px minmax(0, 1fr) 392px;
   align-items: stretch;
 }
 
@@ -148,7 +148,7 @@
 
 /* Right payment panel */
 .magnet-project__payment {
-  padding: 26px 26px 34px;
+  padding: 26px 30px 34px;
   background: var(--magnet-peach);
 }
 
@@ -238,7 +238,7 @@
   font-weight: 600;
 }
 
-.magnet-project__questions a {
+.magnet-project__contact {
   font-size: 11px;
   color: var(--magnet-muted);
 }

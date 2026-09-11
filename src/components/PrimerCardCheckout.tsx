@@ -19,7 +19,7 @@ const SECURE_CHECKOUT_OPTIONS = {
       visible: true,
       required: true,
       placeholder: 'Cardholder Name',
-      defaultValue: 'Kerry Colt',
+      defaultValue: 'Chris Smol',
     },
   },
   submitButton: {

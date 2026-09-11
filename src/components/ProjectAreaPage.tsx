@@ -186,15 +186,13 @@ export function ProjectAreaPage({
             onSuccess={onSuccess}
           />
 
+          {/* Contact details are redacted in config.ts, so they render as
+              plain text rather than broken mailto: and tel: links. */}
           <div className="magnet-project__questions">
             <h3>Questions regarding payment?</h3>
             <p className="magnet-project__showroom">{magnetProject.showroom.name}</p>
-            <a href={`mailto:${magnetProject.showroom.email}`}>
-              {magnetProject.showroom.email}
-            </a>
-            <a href={`tel:${magnetProject.showroom.phone}`}>
-              {magnetProject.showroom.phone}
-            </a>
+            <p className="magnet-project__contact">{magnetProject.showroom.email}</p>
+            <p className="magnet-project__contact">{magnetProject.showroom.phone}</p>
           </div>
         </aside>
       </div>
