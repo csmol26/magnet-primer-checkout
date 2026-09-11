@@ -1,0 +1,25 @@
+.magnet-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--magnet-cream);
+}
+
+.magnet-loading__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+.magnet-loading__logo {
+  padding: 16px 24px;
+  border-radius: var(--magnet-radius);
+  background: var(--magnet-black);
+}
+
+.magnet-loading__spinner {
+  border-color: var(--magnet-line);
+  border-top-color: var(--magnet-black);
+}

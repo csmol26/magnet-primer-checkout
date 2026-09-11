@@ -1,0 +1,84 @@
+.magnet-confirmation {
+  flex: 1;
+  padding: 0 20px 48px;
+}
+
+.magnet-confirmation__card {
+  max-width: 1030px;
+  margin: 0 auto;
+  background: var(--magnet-white);
+}
+
+.magnet-confirmation__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 24px 44px;
+  text-align: center;
+}
+
+.magnet-confirmation__tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: rgba(46, 190, 110, 0.14);
+  color: var(--magnet-green);
+}
+
+.magnet-confirmation__card h1 {
+  font-size: 22px;
+}
+
+.magnet-confirmation__lead {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--magnet-muted);
+}
+
+.magnet-confirmation__facts {
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 28px 0 0;
+  padding: 18px 26px;
+  border-radius: var(--magnet-radius);
+  background: var(--magnet-sand);
+}
+
+.magnet-confirmation__facts div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.magnet-confirmation__facts dt {
+  font-size: 11px;
+  color: var(--magnet-muted);
+}
+
+.magnet-confirmation__facts dd {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.magnet-confirmation__restart {
+  margin-top: 30px;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: var(--magnet-radius);
+  background: var(--magnet-black);
+  color: var(--magnet-white);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.magnet-confirmation__restart:hover {
+  background: #000000;
+}

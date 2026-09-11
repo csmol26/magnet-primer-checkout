@@ -1,0 +1,57 @@
+.magnet-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.magnet-field__label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--magnet-ink);
+}
+
+.magnet-field__input {
+  width: 100%;
+  height: 38px;
+  padding: 0 11px;
+  border: 1px solid var(--magnet-line);
+  border-radius: var(--magnet-radius);
+  background: var(--magnet-white);
+  color: var(--magnet-ink);
+  font-family: var(--magnet-font);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.magnet-field__input::placeholder {
+  color: #a9a49d;
+}
+
+.magnet-field__input:hover {
+  border-color: #bfb9b0;
+}
+
+.magnet-field__input:focus {
+  outline: none;
+  border-color: var(--magnet-black);
+  box-shadow: 0 0 0 1px var(--magnet-black);
+}
+
+.magnet-field__select-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--magnet-muted);
+}
+
+.magnet-field__select {
+  appearance: none;
+  padding-right: 34px;
+  cursor: pointer;
+}
+
+.magnet-field__select-wrap svg {
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+}

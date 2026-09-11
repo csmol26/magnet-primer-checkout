@@ -1,0 +1,11 @@
+.magnet-schemes {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.magnet-scheme {
+  width: 34px;
+  height: 22px;
+  display: block;
+}

@@ -1,0 +1,133 @@
+/**
+ * The Magnet skin for Primer Checkout.
+ *
+ * Everything below is CSS custom properties read by the Primer web components
+ * and forwarded into the PCI-hosted card iframes. No SDK internals are
+ * overridden, so this survives SDK upgrades. Token names verified against
+ * @primer-io/primer-js 1.9.3.
+ */
+
+primer-checkout {
+  display: block;
+
+  /* Typography */
+  --primer-typography-brand: var(--magnet-font);
+  --primer-typography-body-medium-size: 14px;
+  --primer-typography-body-medium-line-height: 20px;
+  --primer-typography-body-large-size: 15px;
+  --primer-typography-title-large-weight: 700;
+
+  /* Brand: drives the submit button and the loader */
+  --primer-color-brand: var(--magnet-green);
+
+  /* Keep the focus ring Magnet-black rather than green */
+  --primer-color-focus: var(--magnet-black);
+  --primer-width-focus: 2;
+
+  /* Text */
+  --primer-color-text-primary: var(--magnet-ink);
+  --primer-color-text-secondary: var(--magnet-muted);
+  --primer-color-text-placeholder: #a9a49d;
+  --primer-color-text-negative: var(--magnet-danger);
+  --primer-color-text-link: var(--magnet-link);
+
+  /* Inputs and outlined surfaces */
+  --primer-color-background-primary: var(--magnet-white);
+  --primer-color-background-outlined-default: var(--magnet-white);
+  --primer-color-background-outlined-hover: var(--magnet-white);
+  --primer-color-background-outlined-selected: #fbfaf8;
+  --primer-color-border-outlined-default: var(--magnet-line);
+  --primer-color-border-outlined-hover: #bfb9b0;
+  --primer-color-border-outlined-active: var(--magnet-black);
+  --primer-color-border-outlined-selected: var(--magnet-black);
+  --primer-color-border-outlined-error: var(--magnet-danger);
+  --primer-color-icon-primary: var(--magnet-ink);
+  --primer-color-icon-negative: var(--magnet-danger);
+
+  /* Shape: Magnet inputs are close to square */
+  --primer-radius-base: 4px;
+  --primer-radius-xsmall: 2px;
+  --primer-radius-small: 4px;
+  --primer-radius-medium: 4px;
+  --primer-radius-large: 6px;
+
+  /* Spacing */
+  --primer-space-base: 4px;
+  --primer-space-small: 8px;
+  --primer-space-medium: 12px;
+  --primer-space-large: 16px;
+}
+
+/* The project-area panel sits on a peach card, so inputs keep a white fill
+   but the borders are a shade warmer, and the pay button is Magnet black. */
+primer-checkout.magnet-primer--project {
+  --primer-color-brand: var(--magnet-black);
+  --primer-color-border-outlined-default: #e3d6c7;
+  --primer-color-border-outlined-hover: #cdbba6;
+}
+
+/* Layout of the fields inside the card form's `card-form-content` slot. */
+.magnet-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.magnet-card-form__row {
+  display: flex;
+  gap: 14px;
+}
+
+.magnet-card-form__row > * {
+  flex: 1;
+  min-width: 0;
+}
+
+.magnet-card-form__submit {
+  margin-top: 6px;
+}
+
+/* Alternative payment methods block, shown when the demo toggle is on. */
+.magnet-apms {
+  margin-top: 22px;
+}
+
+.magnet-apms__divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: var(--magnet-soft);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.magnet-apms__divider::before,
+.magnet-apms__divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--magnet-line);
+}
+
+/* While the SDK boots, primer-main renders nothing. This placeholder keeps
+   the page from collapsing. */
+.magnet-primer-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 40px 0;
+  color: var(--magnet-muted);
+  font-size: 13px;
+}
+
+.magnet-primer-error {
+  padding: 12px 14px;
+  border: 1px solid var(--magnet-danger);
+  border-radius: var(--magnet-radius);
+  background: #fdf0ee;
+  color: #9a3a2c;
+  font-size: 13px;
+}

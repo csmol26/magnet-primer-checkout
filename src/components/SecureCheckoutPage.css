@@ -1,0 +1,130 @@
+.magnet-secure {
+  flex: 1;
+  padding: 0 20px 48px;
+}
+
+.magnet-secure__card {
+  max-width: 745px;
+  margin: 0 auto;
+  background: var(--magnet-white);
+}
+
+.magnet-secure__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 229px;
+  align-items: start;
+}
+
+.magnet-secure__main {
+  padding: 30px 20px 26px;
+  display: flex;
+  flex-direction: column;
+  /* Magnet's column is narrow and centred inside the white card */
+  max-width: 432px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.magnet-secure__intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.magnet-secure__intro h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.magnet-secure__intro p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--magnet-muted);
+}
+
+.magnet-secure__methods {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.magnet-method-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 52px;
+  padding: 0;
+  border: 1px solid var(--magnet-line);
+  border-radius: var(--magnet-radius);
+  background: var(--magnet-white);
+  cursor: pointer;
+}
+
+.magnet-method-tile--selected {
+  border-color: var(--magnet-black);
+  box-shadow: 0 0 0 1px var(--magnet-black);
+}
+
+.magnet-secure__consent {
+  padding: 11px 13px;
+  margin-bottom: 20px;
+  border: 1px solid var(--magnet-line);
+  border-radius: var(--magnet-radius);
+  background: var(--magnet-white);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  font-size: 11px;
+  line-height: 1.55;
+  color: var(--magnet-soft);
+}
+
+/* Magnet's own billing block, rendered inside the Primer card form so it
+   submits with the same button. */
+.magnet-billing {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.magnet-billing__toggle {
+  align-self: flex-start;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--magnet-link);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.magnet-billing__toggle:hover {
+  text-decoration: underline;
+}
+
+.magnet-secure__back {
+  align-self: center;
+  margin-top: 16px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--magnet-ink);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .magnet-secure__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .magnet-secure__main {
+    order: 2;
+    padding: 26px 20px 22px;
+  }
+
+  .magnet-order {
+    order: 1;
+  }
+}

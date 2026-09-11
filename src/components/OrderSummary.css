@@ -1,0 +1,63 @@
+.magnet-order {
+  background: var(--magnet-white);
+  align-self: start;
+}
+
+.magnet-order__header {
+  background: var(--magnet-black);
+  color: var(--magnet-white);
+  padding: 18px 22px;
+}
+
+.magnet-order__header h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.magnet-order__lines {
+  padding: 16px 22px 20px;
+  font-size: 12px;
+  color: var(--magnet-muted);
+}
+
+.magnet-order__line-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.magnet-order__ref {
+  font-weight: 600;
+  color: var(--magnet-ink);
+}
+
+.magnet-order__amount {
+  color: var(--magnet-ink);
+}
+
+.magnet-order__line {
+  margin-top: 2px;
+}
+
+.magnet-order__totals {
+  padding: 16px 22px 22px;
+  background: var(--magnet-sand);
+  font-size: 12px;
+}
+
+.magnet-order__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+  color: var(--magnet-ink);
+}
+
+.magnet-order__row--total {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+  font-weight: 700;
+}

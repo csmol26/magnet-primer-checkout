@@ -1,0 +1,76 @@
+.magnet-header {
+  background: var(--magnet-black);
+  color: var(--magnet-white);
+}
+
+.magnet-header__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 28px;
+}
+
+.magnet-header--compact .magnet-header__inner {
+  padding: 12px 20px;
+  max-width: none;
+}
+
+.magnet-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.magnet-logo__word {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--magnet-white);
+}
+
+.magnet-logo__tagline {
+  margin-top: 3px;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--magnet-amber);
+}
+
+.magnet-logo--compact .magnet-logo__word {
+  font-size: 15px;
+}
+
+.magnet-logo--compact .magnet-logo__tagline {
+  font-size: 6px;
+}
+
+.magnet-header__title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--magnet-white);
+}
+
+.magnet-header__settings {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+.magnet-header__settings:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--magnet-white);
+}
